@@ -77,10 +77,10 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.mokee.livedisplay@2.0-service-sdm
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-mokee
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -95,4 +95,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+    vendor.mokee.trust@1.0-service

@@ -22,15 +22,15 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := lineageos_b4s4_defconfig
+TARGET_KERNEL_CONFIG := mokee_b4s4_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 TARGET_NEEDS_DTBOIMAGE := true
 
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # Manifests
-DEVICE_MANIFEST_FILE += device/google/bonito/lineage_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_MANIFEST_FILE += device/google/bonito/mokee_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/mokee/config/device_framework_matrix.xml
 
 # Partitions
 AB_OTA_PARTITIONS += \
@@ -50,8 +50,8 @@ BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 30720000
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/google/bonito/sepolicy-lineage/dynamic
-BOARD_SEPOLICY_DIRS += device/google/bonito/sepolicy-lineage/vendor
+BOARD_SEPOLICY_DIRS += device/google/bonito/sepolicy-mokee/dynamic
+BOARD_SEPOLICY_DIRS += device/google/bonito/sepolicy-mokee/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
